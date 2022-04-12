@@ -3,3 +3,31 @@
     padding:0;
     box-sizing: border-box;
 }
+
+
+body{
+    background-color: rgba(2, 48, 71, 1);
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+h1{
+    text-align: center;
+    font-size: 3.5rem;
+    color: white;
+    margin-top: 50px;
+}
+
+.container{
+    
+    width: 800px;
+    margin:1rem auto;
+    background-color: rgb(194, 175, 194);
+}
+
+.card{
+    width: 600px;
+    height: 400px;
+    margin:1rem auto;
+
+}
+

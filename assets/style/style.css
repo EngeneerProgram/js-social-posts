@@ -71,8 +71,24 @@ h1{
 
 .post_img{
     width: 100%;
-    padding:1rem;
+    
     width: 100%;
     height: 480px;
    
+}
+
+.like{
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+    
+
+}
+
+.foto_like{
+    width: 30px;
+    height: 30px;
+    vertical-align:middle;
+    margin:10px;
+    cursor:pointer;
 }

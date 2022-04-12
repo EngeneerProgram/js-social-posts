@@ -12,7 +12,7 @@
 const arrayCard = [
     {
         nome : "Phil Mangione",
-        foto_autore : "https://unsplash.it/300/300?image=", 
+        foto_autore : "https://unsplash.it/300/300?image=",
         data : "Tuesday, June 4, 2021",
         testo : "Lorem Ipsum è un testo segnaposto utilizzato nel settore della tipografia e della stampa. Lorem Ipsum è considerato il testo segnaposto standard sin dal sedicesimo secolo",
         foto : "https://unsplash.it/300/300?image=",
@@ -41,7 +41,7 @@ const arrayCard = [
 ];
 
 arrayCard.forEach(post => {
-    console.log(post.nome, post.foto_autore, post.data, post.testo, post.like);
+    console.log(post.nome, post.foto_autore, post.data, post.testo, post.like,post.foto);
 });
 
 
@@ -54,13 +54,16 @@ for(let i = 0; i<arrayCard.length; i++){
     container.innerHTML += `
     <div class="card">
         <div class="Profilo">
-            <img src"${arrayCard[i].foto_autore}"><img>
-            <h1>${arrayCard[i].nome}</h1>
-            <h6>${arrayCard[i].data}</h6>
+            <img class="rounded" src = "${arrayCard[i].foto_autore}">
+            <div class="info_utente">
+                <h1 class="nome_utente">${arrayCard[i].nome}</h1>
+                <h6>${arrayCard[i].data}</h6>
+            </div>
+
         </div>
 
-        <p>${arrayCard[i].testo}</p>
-        <img src"https://unsplash.it/300/300?image=""><img>
+        <p class="testo">${arrayCard[i].testo}</p>
+        <img class="post_img" src = "https://unsplash.it/300/300?image="><img>
 
         <div class="like">${arrayCard[i].like}</div>
     </div>

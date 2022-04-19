@@ -77,9 +77,11 @@ for(let i = 0; i<arrayCard.length; i++){
 }
 
 const like = document.querySelectorAll(".foto_like");
-for(let i = 0; i<like.length; i++){
+for(let i = 0; i<like.lenght; i++){
    like[i].addEventListener("click", function(){
-       console.log("ok")
+       //change color
+       like[i].style.backgroundColor = "blue"
+       
    })
 }
 

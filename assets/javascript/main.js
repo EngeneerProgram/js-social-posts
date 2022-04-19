@@ -82,9 +82,11 @@ const color_like = document.querySelectorAll(".color_text");
 for(let i = 0; i<color_like.length; i++){
     color_like[i].addEventListener("click",function(){
         color_like[i].style.color = "rgb(44, 44, 230)";
+        
+       
+        
     })
     
-   
 
    
         
@@ -94,7 +96,7 @@ for(let i = 0; i<color_like.length; i++){
  const delete_like = document.querySelectorAll(".no-like");
  for(let i = 0; i<delete_like.length; i++){
      delete_like[i].removeEventListener("click", function(){
-        
+        delete_like[i].remove();
      })
  }
 
